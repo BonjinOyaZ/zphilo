@@ -1,0 +1,7 @@
+feat: Setup AI-driven agile development environment
+
+- Created `specs/` and `memory/` directories for better organization.
+- Moved all development-related documents from `docm/` to `specs/`.
+- Removed the now empty `docm/` directory.
+- Created `memory/ai_input_digest.md` to store AI's long-term memory.
+- Established a daily workflow for logging conversations, updating AI's memory, and syncing with GitHub.
