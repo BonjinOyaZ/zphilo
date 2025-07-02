@@ -1,27 +1,33 @@
 user:
-  name: "あなたの名前"
-  created_at: "2025-06-28"
-
+  name: ''
+  created_at: '2025-07-02'
 philosophy:
-  title: "あなたのフィロソフィ（人生の信条）"
-  description: |
-    自分の信じる価値観や原則。渋沢栄一なら「道徳経済合一」。
-    あなたにとっての「人生の軸」をここに記述。
-
+  title: ''
+  description: ''
 mission:
-  statement: |
-    あなたの使命（人生で実現したいこと、貢献したいこと）
-
+  statement: ''
 vision:
-  year_5: "5年後の理想像"
-  year_10: "10年後のビジョン"
-  year_20: "20年後の人生観"
-
+  year_5: ''
+  year_10: ''
+  year_20: ''
 values:
-  - situation: "困難に直面したとき"
-    action: "信頼できる仲間と共有し、長期的視点で判断する"
-  - situation: "利益と倫理が衝突したとき"
-    action: "倫理を優先し、利益は後からついてくると考える"
-  - situation: "新しい挑戦に迷ったとき"
-    action: "挑戦に意味があるか？社会に資するか？で決める"
-  # ...（最大10個程度までOK）
+- situation: 逆境に直面したとき
+  action: ''
+- situation: 利益と倫理が衝突したとき
+  action: ''
+- situation: 人と意見が食い違ったとき
+  action: ''
+- situation: 怒りを感じたとき
+  action: ''
+- situation: 判断に迷ったとき（優先順位）
+  action: ''
+- situation: 新しい挑戦をするか迷ったとき
+  action: ''
+- situation: 誘惑や甘えに流されそうなとき
+  action: ''
+- situation: 仲間が困っているとき
+  action: ''
+- situation: 自分の実力が足りないと痛感したとき
+  action: ''
+- situation: 誰かに裏切られたり、失望したとき
+  action: ''

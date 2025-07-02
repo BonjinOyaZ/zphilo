@@ -39,7 +39,7 @@ zphilo_template = {
 def write_zphilo_yaml(path="zphilo.yaml"):
     with open(path, "w", encoding="utf-8") as f:
         yaml.dump(zphilo_template, f, allow_unicode=True, sort_keys=False)
-    print(f"✅ '{path}' を生成しました。Z哲学の旅を始めましょう！")
+    print(f"'{path}' を生成しました。Z哲学の旅を始めましょう！")
 
 if __name__ == "__main__":
     write_zphilo_yaml()
