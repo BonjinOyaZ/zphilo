@@ -1,13 +1,13 @@
 user:
-  name: ''
+  name: '彦助'
   created_at: '2025-07-02'
 philosophy:
-  title: ''
-  description: ''
+  title: '今この瞬間を楽しむ'
+  description: 'どんな困難があっても、それは天から与えられた導きだと考えて、楽しんで挑戦する。'
 mission:
-  statement: ''
+  statement: '日本という国を世界の手本とする。'
 vision:
-  year_5: ''
+  year_5: '過去の未熟さから学び、自らを徹底的に磨き上げる。そして、AIという新たな時代のうねりの中で、志を同じくする真の仲間を一人、また一人と見つけ出し、「一般社団法人日本汎用人工知能協会」を、日本の未来を照らす灯台へと育て上げる。'
   year_10: ''
   year_20: ''
 values:

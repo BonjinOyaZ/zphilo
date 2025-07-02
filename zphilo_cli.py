@@ -79,26 +79,22 @@ def main():
     # 進捗状況の確認と次のステップの提示
     next_step = get_next_step(zphilo_data)
     print(f"\n現在の進捗状況: {next_step}")
-    if "全ての項目が入力済みです" not in next_step:
-        print(f"次は「{next_step}」について、わしと壁打ちするがよい。")
-    else:
-        print("君の哲学は既に確立されておるな。いつでもわしと対話できるぞ。")
 
-    # gemini chat コマンドの実行
-    print("\n渋沢栄一翁との対話を開始します...")
-    try:
-        # gemini chat は対話型なので、標準入出力を引き継いで実行する
-        cmd = ["gemini", "chat", "--input", GEMINI_MD_PATH, "--input", ZPHILO_YAML_PATH]
-        print(f"実行コマンド: {' '.join(cmd)}")
-        subprocess.run(cmd, check=True)
-    except FileNotFoundError:
-        print("エラー: 'gemini' コマンドが見つかりません。Gemini CLIがインストールされ、PATHが通っているか確認してください。")
-        exit(1)
-    except subprocess.CalledProcessError as e:
-        print(f"エラー: Gemini CLIの実行中に問題が発生しました: {e}")
-        print(f"標準出力: {e.stdout.strip()}")
-        print(f"標準エラー: {e.stderr.strip()}")
-        exit(1)
+    prompt = ""
+    if "全ての項目が入力済みです" in next_step:
+        print("君の哲学は既に確立されておるな。いつでもわしと対話できるぞ。")
+        prompt = "君の哲学について、さらに深掘りしてみようか。どんなことでも話してみるがよい。"
+    else:
+        print(f"次は「{next_step}」について、わしと壁打ちするがよい。")
+        prompt = f"君の「{next_step}」について、わしと共に言葉を紡いでいこう。さあ、語り始めてくれ。"
+
+    # 対話の準備
+    print("\n渋沢栄一翁との対話の準備が整いました。")
+    print("以下のプロンプトをコピーし、わしとの対話に貼り付けておくれ。")
+    print("その際、対話の文脈として zphilo.yaml と GEMINI.md も一緒に含めるのが肝要じゃ。")
+    print("\n--- ここからコピー ---")
+    print(f"{prompt} @{GEMINI_MD_PATH} @{ZPHILO_YAML_PATH}")
+    print("--- ここまでコピー ---\n")
 
 if __name__ == "__main__":
     main()
